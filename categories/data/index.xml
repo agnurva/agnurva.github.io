@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
-    <link>https://datasingularity.org/post/</link>
-    <description>Recent content in Posts on </description>
+    <title>Data on </title>
+    <link>https://datasingularity.org/categories/data/</link>
+    <description>Recent content in Data on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 26 Dec 2018 14:56:54 +0530</lastBuildDate>
     
-	<atom:link href="https://datasingularity.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://datasingularity.org/categories/data/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
