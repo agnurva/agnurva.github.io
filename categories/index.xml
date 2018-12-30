@@ -10,14 +10,5 @@
 	<atom:link href="https://datasingularity.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Data</title>
-      <link>https://datasingularity.org/categories/data/</link>
-      <pubDate>Wed, 26 Dec 2018 14:56:54 +0530</pubDate>
-      
-      <guid>https://datasingularity.org/categories/data/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
