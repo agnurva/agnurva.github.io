@@ -171,7 +171,22 @@
 </tbody>
 </table>
 
-<p>Based on these finding one can conclude that the entities are very similar. However, such a conclusion could not be further away from reality. To get a better understanding of the data one would need to dig deeper and this is difficult since most cannot percieve the layout of data by merely looking at number. Thankfully, this is where Visualization can help us.</p>
+<p>Based on these finding one can conclude that the entities are very similar. However, such a conclusion could not be further away from reality. To get a better understanding of the data one would need to dig deeper and this is difficult since most cannot percieve the layout of data by merely looking at number. Thankfully, this is where Visualization can help us.
+<img src="/anscombe_quartet_viz.png" alt="" />
+The above image is famously known as the Anscombe&rsquo;s quartet constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers on statistical properties. He described the article as being intended to counter the impression among statisticians that &ldquo;numerical calculations are exact, but graphs are rough.&rdquo;</p>
+
+<p>Anscombe uses simple dots to represent the data in a two dimensional to represent each of the features x and y. As many of you already know this is commonly know as a scatter plot. This simple visual representation provides an easy means to understand the layout of data which was difficult to percieve through the summary stats. From the visualization we draw the following conclusions:</p>
+
+<ul>
+<li>The first scatter plot (top left) appears to be a simple linear relationship  and following the assumption of normality.</li>
+<li>The second graph (top right) is not distributed normally; while a relationship between the two variables is obvious, it is not linear, and the Pearson correlation coefficient is not relevant. A more general regression and the corresponding coefficient of determination would be more appropriate.</li>
+<li>In the third graph (bottom left), the distribution is linear, but should have a different regression line. The calculated regression is offset by the one outlier which exerts enough influence to lower the correlation coefficient from 1 to 0.816.</li>
+<li>Finally, the fourth graph (bottom right) shows an example when one outlier is enough to produce a high correlation coefficient, even though the other data points do not indicate any relationship between the variables.</li>
+</ul>
+
+<p>I have taken most of the above extracts from Wikipedia and used Bokeh Visualization to recreate this amazing piece of work. Please check the reference section for more details.</p>
+
+<p>I hope with this blog I have provided a glimpse of how important Visualization is when analysing data. In my subsequent posts I will try and recreate few other famous visualizations. By the end of this introductory series I wish to expose the audience to the art and science of Visualization.</p>
     
         </div>
     </section>
