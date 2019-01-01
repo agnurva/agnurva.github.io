@@ -4,15 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>An Introduction to Data Visualization-Part 1 &middot; </title>
+    <title>An Introduction to Data Visualization-Part 2 &middot; </title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://datasingularity.org/favicon.ico" />
-    <link rel="canonical" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/" />
+    <link rel="canonical" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
 
-     <meta name="description" content="Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines, maps or" /> 
+     <meta name="description" content="" /> 
 
      
     
@@ -20,20 +20,20 @@
     <meta name="twitter:image" content="https://datasingularity.org/Intro_to_viz.jpg"/>
     
  
-    <meta name="twitter:title" content="An Introduction to Data Visualization-Part 1"/>
-    <meta name="twitter:description" content="Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines, maps or"/>
-    <meta name="twitter:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/" />
+    <meta name="twitter:title" content="An Introduction to Data Visualization-Part 2"/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
     <meta name="twitter:site" content="@agnurva"/>
 
     <meta property="og:site_name" content="" />
-    <meta property="og:title" content="An Introduction to Data Visualization-Part 1 &middot; Digital Codex" />
-    <meta property="og:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/" />
+    <meta property="og:title" content="An Introduction to Data Visualization-Part 2 &middot; Digital Codex" />
+    <meta property="og:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines, maps or" />
+    <meta property="og:description" content="" />
 
-    <meta property="article:published_time" content="2018-12-26T14:56:54&#43;05:30" />
+    <meta property="article:published_time" content="2019-01-01T13:17:03&#43;05:30" />
     <meta property="article:tag" content="Data" />
 
     <meta property="og:image" content="https://datasingularity.org/Intro_to_viz.jpg"/>
@@ -108,10 +108,10 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2018-12-26">26 December 2018</time>
+            <time class="post-full-meta-date" datetime="2019-01-01">1 January 2019</time>
                 <span class="date-divider">/</span> <a href="https://datasingularity.orgtags/data/">#Data</a>&nbsp;
         </section>
-        <h1 class="post-full-title">An Introduction to Data Visualization-Part 1</h1>
+        <h1 class="post-full-title">An Introduction to Data Visualization-Part 2</h1>
     </header>
     
     <figure class="post-full-image" style="background-image: url(https://datasingularity.org/Intro_to_viz.jpg)">
@@ -119,83 +119,7 @@
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        
-
-<p>Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines, maps or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand data and share Information.</p>
-
-<p>Consider the data given below. It consists of features(attributes) &lsquo;x&rsquo; and &lsquo;y&rsquo; related to 4 different entities with 11 observations(tuples) each. Assume that the objective is to find the similarity between these entities.
-<img src="/anscombes_quartet.png" alt="" />
- A data analyst would typically go about this problem by quantitatively describing or summarizing the features. This process is know as descriptive or summary stastics. A simple summary stats of the above dataset is given below. Please note that values are approximated to 2 decimal places.</p>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Mean of x</td>
-<td>9</td>
-</tr>
-
-<tr>
-<td>Sample variance of x</td>
-<td>11</td>
-</tr>
-
-<tr>
-<td>Mean of y</td>
-<td>7.50</td>
-</tr>
-
-<tr>
-<td>Sample variance of y</td>
-<td>4.12</td>
-</tr>
-
-<tr>
-<td>Correlation between x and y</td>
-<td>0.81</td>
-</tr>
-
-<tr>
-<td>Linear regression line</td>
-<td>y = 3.00 + 0.50x</td>
-</tr>
-
-<tr>
-<td>Coefficient of determination of the linear regression</td>
-<td>0.67</td>
-</tr>
-</tbody>
-</table>
-
-<p>Based on these finding one can conclude that the entities are very similar. However, such a conclusion could not be further away from reality. To get a better understanding of the data one would need to look deeper and this is difficult since most people cannot percieve the layout of data by merely looking at number. Thankfully, this is where Visualization can help us. Consider the image below which is a visual representation of the data representing the 4 entities.
-<img src="/anscombe_quartet_viz.png" alt="" />
-The above image very intutive and clearly illustartes the layout out data and hence the difference between the entities in question. This visual representation is famously known as the Anscombe&rsquo;s quartet constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers on statistical properties. He described the article as being intended to counter the impression among statisticians that &ldquo;numerical calculations are exact, but graphs are rough.&rdquo;</p>
-
-<p>Anscombe uses simple dots to represent the data in two dimensions to represent each of the features x and y. As many of you already know this is a simple scatter plot. This simple visual representation provides an easy means to understand the layout of data which was difficult to percieve through the summary stats. From the visualization we can draw the following conclusions:</p>
-
-<ul>
-<li>The first scatter plot (top left) appears to be a simple linear relationship  and seems to follow the assumption of normality.</li>
-<li>The second graph (top right) is not distributed normally; while a relationship between the two variables is obvious, it is not linear, and the Pearson correlation coefficient is not relevant. A more general regression and the corresponding coefficient of determination would be more appropriate.</li>
-<li>In the third graph (bottom left), the distribution is linear, but should have a different regression line. The calculated regression is offset by the one outlier which exerts enough influence to lower the correlation coefficient from 1 to 0.816.</li>
-<li>Finally, the fourth graph (bottom right) shows an example when one outlier is enough to produce a high correlation coefficient, even though the other data points do not indicate any relationship between the variables.</li>
-</ul>
-
-<p>I have taken most of the above extracts from Wikipedia and used Bokeh Visualization to recreate this amazing piece of work. Please check the reference section for more details.</p>
-
-<p>I hope with this blog I have provided a glimpse of how important Visualization is when analysing data. In my subsequent posts I will try and recreate few other famous visualizations. By the end of this 3 part introductory series I wish to expose the audience to what little I know about the art and science of Visualization.</p>
-
-<h3 id="references">References</h3>
-
-<p><a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe&rsquo;s Quartet - Wikipedia</a></p>
-
-<p><a href="https://github.com/agnurva/WorkingDirectoryBackup/blob/master/Anscombe_Quartet.ipynb">Recreation of Anscrombe&rsquo;s quartet using Bokeh</a></p>
-    
+            
         </div>
     </section>
 
@@ -225,18 +149,18 @@ The above image very intutive and clearly illustartes the layout out data and he
       
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/">
-      <div class="post-card-image" style="background-image: url(https://datasingularity.org/Intro_to_viz.jpg)"></div>
+    <a class="post-card-image-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/">
+      <div class="post-card-image" style="background-image: url(https://datasingularity.org/Intro_to_viz1.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/">
+      <a class="post-card-content-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/">
           <header class="post-card-header">
               <span class="post-card-tags">
               #Data  </span>
               
-              <h2 class="post-card-title">An Introduction to Data Visualization-Part 2</h2>
+              <h2 class="post-card-title">An Introduction to Data Visualization-Part 3</h2>
           </header>
           <section class="post-card-excerpt">
               
@@ -253,6 +177,35 @@ The above image very intutive and clearly illustartes the layout out data and he
 </article>
       
       
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">
+      <div class="post-card-image" style="background-image: url(https://datasingularity.org/Intro_to_viz.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #Data  </span>
+              
+              <h2 class="post-card-title">An Introduction to Data Visualization-Part 1</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines, maps or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand data and share Information. ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://datasingularity.org/img/ghost-icon.png" alt="Author" />
+          <span class="post-card-author"><a href="/">Clement Francis</a></span>
+      </footer>
+    </div>
+</article>
+      
     </div>
   </div>
 </aside>
@@ -265,17 +218,17 @@ The above image very intutive and clearly illustartes the layout out data and he
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">An Introduction to Data Visualization-Part 1</div>
+  <div class="floating-header-title">An Introduction to Data Visualization-Part 2</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=An%20Introduction%20to%20Data%20Visualization-Part%201&amp;url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-1%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=An%20Introduction%20to%20Data%20Visualization-Part%202&amp;url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-1%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
