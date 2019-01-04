@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="https://datasingularity.org/favicon.ico" />
     <link rel="canonical" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
 
-     <meta name="description" content="Hello folks, I hope you found part one of the Introducution to visualization series interesting. In part one, the focus was on using visualization for analysing" /> 
+     <meta name="description" content="Hello folks, I hope you found part one of the introducution to visualization series interesting. In part one, the focus was on using visualization for analysing" /> 
 
      
     
@@ -21,7 +21,7 @@
     
  
     <meta name="twitter:title" content="An Introduction to Data Visualization-Part 2"/>
-    <meta name="twitter:description" content="Hello folks, I hope you found part one of the Introducution to visualization series interesting. In part one, the focus was on using visualization for analysing"/>
+    <meta name="twitter:description" content="Hello folks, I hope you found part one of the introducution to visualization series interesting. In part one, the focus was on using visualization for analysing"/>
     <meta name="twitter:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
     <meta name="twitter:site" content="@agnurva"/>
 
@@ -31,7 +31,7 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="Hello folks, I hope you found part one of the Introducution to visualization series interesting. In part one, the focus was on using visualization for analysing" />
+    <meta property="og:description" content="Hello folks, I hope you found part one of the introducution to visualization series interesting. In part one, the focus was on using visualization for analysing" />
 
     <meta property="article:published_time" content="2019-01-01T13:17:03&#43;05:30" />
     <meta property="article:tag" content="Data" />
@@ -121,25 +121,25 @@
         <div class="kg-card-markdown">
         
 
-<p>Hello folks, I hope you found part one of the Introducution to visualization series interesting. In part one, the focus was on using visualization for analysing and understanding data. In this blog we will re-emphasise on this aspect of data visualization.</p>
+<p>Hello folks, I hope you found part one of the introducution to visualization series interesting. In part one, the focus was on using visualization for analysing and understanding data. In this blog, we will re-emphasize on this aspect of data visualization.</p>
 
-<p>Let me take you folks back in time to the 19th century, which saw a large scale change in the sociatial structures around the world. Slavery was abolished, and the Second Industrial Revolution led to massive urbanization and significantly higher levels of productivity. This also gave rise to a massive migration of people from all over to large cities for work. The living conditions of these working class people was not planned and they were frequently prone to diseases usually in waves of epimedics that took many lives.</p>
+<p>Let me take you back in time to the early 19th century which saw a large scale change in the societal structures around the world. Slavery was abolished, and the Second Industrial Revolution led to massive urbanization and significantly higher levels of productivity. This also gave rise to a massive migration of people from all over the world to large cities for work. The living conditions of these working class people were not planned and they were frequently prone to diseases usually in waves of epidemics that took many lives.</p>
 
-<p>People believed that the origin of epidimics was a noxious form of &ldquo;bad air&rdquo;, also known as night air and this theory was known as the Miasma theory. Diseases such as cholera, chlamydia, or the Black Death were though to have been caused by this foul air. However, John snow had studied cholera outbreaks throughout his life and was skeptical about the theory. Through his observations he believed that the disease is spread through water and was out to prove the medical community wrong about the Miasma theory. John snow knew that the city water was supplied by two companies and decided to conduct a double blind study. His study provided evidence that the company that was supplying water form downstream Thames river caused the diseases since it was contaminated with the sanitary wastes from the city. His theory was not accepted and life went on until a severe outbreak of cholera occurred in 1854 near Broad Street. John Snow was quick the reach the spot and collect data related to death and water source in the neighbourhood. He plotted this data on a map of the city and was successful in convincing the authorities about his theory which led to them removing the handle of the contaminated water pump. Given below is the original map created by John Snow.
+<p>People believed that the origin of these epidemics was a noxious form of bad air, also known as &ldquo;night air&rdquo; and this theory was known as the Miasma theory. Diseases such as cholera, chlamydia, or the Black Death were though to have been caused by this foul air. However, John Snow had studied cholera outbreaks throughout his life and was skeptical about this theory. Through his observations, he believed that the disease spread through water and was out to prove the medical community wrong about the Miasma theory. Snow knew that the city water was supplied by two companies and decided to conduct a double blind study. His study provided evidence that the company that was supplying water form downstream Thames river caused the diseases since it was contaminated with the sanitary wastes from the city. His theory was not accepted and life went on until a severe outbreak of cholera occurred in 1854 near Broad Street. Snow was quick to reach the spot and collect data related to death and water source in the neighbourhood. He plotted this data on a map of the city and was successful in convincing the authorities about his theory which led them to removing the handle of the contaminated water pump. Given below is the original map created by Snow.
 <img src="/john_snow_orignial.png" alt="" />
-I have recreated the visualization using Google maps and Bokeh visualization. Please not that the layout of the map has changed over the years.
+I have recreated the map visualization using Google maps and Bokeh visualization library. Please note that the layout of the map has changed over the years.
 <img src="/john_snow_recreation.png" alt="" /></p>
 
 <ul>
 <li>The black dots on the map indicates the deaths due to cholera</li>
 <li>The red dot indicates the water source(water pump)</li>
-<li>The circle around each water source indicates the approximate range of wach water source. John Snow originally used Thiessen polygons by actaully measuring the walking siatnce between the water source and the realted death. Since I do not have the data I have replaced it with a circle which could be a little misleading. The outliers are significantly different when viewed using Thiessen polygons.</li>
-<li>It can be noticed that some of the deaths seems to be outliers. There seems to be a non contaminated water source nearby. But John Snow manually visited these places and collected information and found that even these deaths are due to the Broad street pump from which they drank water on their way to school or work and something similar.</li>
+<li>The circle around each water source indicates the approximate range of each water source. Snow originally used Thiessen polygons by actaully measuring the walking distance between the water source and the related death. Since I do not have the data, I have replaced it with a circle which could be a little misleading. The outliers are significantly different when viewed using Thiessen polygons.</li>
+<li>It can be noticed that some of the deaths seems to be outliers. There seems to be a non-contaminated water source nearby. But Snow manually visited these places and collected information and found that even these deaths were due to the Broad street pump from which they drank water on their way to school or work.</li>
 </ul>
 
-<p>John Snow&rsquo;s findings inspired fundamental changes in the water and waste management systems of London, which led to similar changes in other cities around the world. His contributions are also significant in formulating the &ldquo;Germ theory&rdquo; which is accepted today.</p>
+<p>Snow&rsquo;s findings inspired fundamental changes in the water and waste management systems of London, which led to similar changes in other cities around the world. His contributions are also significant in formulating the &ldquo;Germ theory&rdquo; which is accepted today.</p>
 
-<p>Though John Snow did ont live to see his work better the quality of lives of people around the world his work will inspire us and he will forever be remembered for his contribution to humanity.</p>
+<p>Though John Snow did not live to see his work better the quality of lives of people around the world, his work will inspire us and he will forever be remembered for his contribution to humanity.</p>
 
 <h3 id="references">References</h3>
 
@@ -147,7 +147,7 @@ I have recreated the visualization using Google maps and Bokeh visualization. Pl
 
 <p><a href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">Broad Street Choldera Outbreak - Wikipedia</a></p>
 
-<p><a href="https://github.com/agnurva/WorkingDirectory/blob/master/Anscombe_Quartet.ipynb">Recreation of John Snow&rsquo;s Cholera Map - Jupyter Notebook</a></p>
+<p><a href="https://github.com/agnurva/WorkingDirectory/blob/master/JohnSnow_Broadstreet_Outbreak.ipynb">Recreation of John Snow&rsquo;s Cholera Map - Jupyter Notebook</a></p>
     
         </div>
     </section>
@@ -261,7 +261,7 @@ I have recreated the visualization using Google maps and Bokeh visualization. Pl
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f &title=An%20Introduction%20to%20Data%20Visualization-Part%202 &summary=Hello%20folks%2c%20I%20hope%20you%20found%20part%20one%20of%20the%20Introducution%20to%20visualization%20series%20interesting.%20In%20part%20one%2c%20the%20focus%20was%20on%20using%20visualization%20for%20analysing%20and%20understanding%20data.%20In%20this%20blog%20we%20will%20re-emphasise%20on%20this%20aspect%20of%20data%20visualization.%0aLet%20me%20take%20you%20folks%20back%20in%20time%20to%20the%2019th%20century%2c%20which%20saw%20a%20large%20scale%20change%20in%20the%20sociatial%20structures%20around%20the%20world.%20Slavery%20was%20abolished%2c%20and%20the%20Second%20Industrial%20Revolution%20led%20to%20massive%20urbanization%20and%20significantly%20higher%20levels%20of%20productivity.&source=LinkedIn">LinkedIn Share</a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f &title=An%20Introduction%20to%20Data%20Visualization-Part%202 &summary=Hello%20folks%2c%20I%20hope%20you%20found%20part%20one%20of%20the%20introducution%20to%20visualization%20series%20interesting.%20In%20part%20one%2c%20the%20focus%20was%20on%20using%20visualization%20for%20analysing%20and%20understanding%20data.%20In%20this%20blog%2c%20we%20will%20re-emphasize%20on%20this%20aspect%20of%20data%20visualization.%0aLet%20me%20take%20you%20back%20in%20time%20to%20the%20early%2019th%20century%20which%20saw%20a%20large%20scale%20change%20in%20the%20societal%20structures%20around%20the%20world.%20Slavery%20was%20abolished%2c%20and%20the%20Second%20Industrial%20Revolution%20led%20to%20massive%20urbanization%20and%20significantly%20higher%20levels%20of%20productivity.&source=LinkedIn">LinkedIn Share</a>
   </div>
 
   <progress class="progress" value="0">
