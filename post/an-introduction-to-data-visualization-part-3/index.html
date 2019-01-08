@@ -140,9 +140,17 @@
 
 <p><img src="/example_charts.png" alt="" /></p>
 
-<p>Using these charts some of these inforamtion can be shared with the users. A report or a dashboard usually consists of a group of these charts that are centered around a commmon theme. The number of charts to be used, their layout and the customizable options to provide along with the charts depends on various factors. There are many different way to use these pre defined charts to convey inforamtion, but the main challenge here is to fit the data between these group of charts and provide functions to filter and aggregate to gather information. These charts are good mechanisms to communicate fine detailed information and at times redundant. I will cover more on these canned reports and dashboards in another blog post. For now the focus is on visualization and how it differs from these fixed representations.</p>
+<p>A report or a dashboard usually consists of a group of these charts that are centered around a commmon theme. The number of charts to be used, their layout and the customizable options to provide along with the charts depends on various factors. There are many different way to use these pre defined charts to convey inforamtion, but the main challenge here is to fit the data between these group of charts and provide functions to filter and aggregate to gather information. These charts are good mechanisms to communicate fine detailed information and at times redundant. I will cover more on these canned reports and dashboards in another blog post. For now the focus is on visualization and how it differs from these fixed representations.</p>
 
 <p>Visualization in my opinion is more of a process and is holistic in nature. It always focuses on the entire data in one visual representation and usually provides summarised insights. It is the first step towards understanding data and the information it contains. In visualization we start with a blank canvas and add layers one by one to project the entire data in a form that can be easily understood and interpreted. We  do not force fit the data into a pre-defined chart, this is because we do not yet know the structure of the data and hence we do not know how it need to be communicated visually. The exploratory process is carried out by adding contextual constraints(say time) to basic visual glyphs such as points, lines, regions etc. Once they are encoded in this fashion they are likely to show hidden patterns which are then tailored into the visualization as additional layers. This process is repeated until we have the  complete story recreated using a visual representation. This process requires a lot of skill and is easier said than done. So, let us break down Sarah Bird&rsquo;s code and try to understand this process.</p>
+
+<p>But before we proceed we need to choose the right tools to go about this task. I initially thought of using D3js but found the learning curve too be too steep and requiring knowledge of javascript, html, css and svg. Since I am a data engineer and work mostly with SQL and python I was on the lookout for some tool that uses there programming paradigms. That is when I came across Bokeh, a visualization library that can be used to created visualizations like D3js but uses Python. It is one of my intentions to introduce the audience to Bokeh.</p>
+
+<p>Step 1: Import data</p>
+
+<pre><code class="language-python">import pandas as pd
+data = pd.read_csv('gapminder.csv', index_col='Year', thousands=',')
+</code></pre>
     
         </div>
     </section>
