@@ -6,10 +6,20 @@
     <description>Recent content in Visualization on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Jan 2019 13:17:03 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 13:19:26 +0530</lastBuildDate>
     
 	<atom:link href="https://datasingularity.org/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Introduction to Data Visualization-Part 3</title>
+      <link>https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/</link>
+      <pubDate>Tue, 01 Jan 2019 13:19:26 +0530</pubDate>
+      
+      <guid>https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/</guid>
+      <description>In this last blog post on Introduction to visualization I would like to take you folks through Sarah Bird&amp;rsquo;s recreation of Gapminder&amp;rsquo;s - Health and Wealth of Nations that was presented by Hans Rosling at a TED conference. This is an iconic visualization from recent times, one which inspired me to use visualization as the main tool when working with Data.
+In the last two posts of this series, the emphasis was on the importance of using visualization for understanding data and sharing information.</description>
+    </item>
     
     <item>
       <title>An Introduction to Data Visualization-Part 2</title>
