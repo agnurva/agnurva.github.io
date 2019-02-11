@@ -6,19 +6,10 @@
     <description>Recent content in Data on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 23 Jan 2019 14:42:27 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 13:19:26 +0530</lastBuildDate>
     
 	<atom:link href="https://datasingularity.org/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Data Modelling Process - Part 1</title>
-      <link>https://datasingularity.org/post/data-modelling-process-part-1/</link>
-      <pubDate>Wed, 23 Jan 2019 14:42:27 +0530</pubDate>
-      
-      <guid>https://datasingularity.org/post/data-modelling-process-part-1/</guid>
-      <description>Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information Systems(IS) based on Relational DataBase Management System(RDBMS), Today I primilarily work on Visualiztion and Analytics solution based on Big Data technologies. I though of quickly brushing up on the traditional way of managing information. I was too lazy to find and read those old chunky books on databases and so I started with youtube and followed up with couple of links on Google looking out for definitions, laws and design guidelines used in Data Modelling.</description>
-    </item>
     
     <item>
       <title>An Introduction to Data Visualization-Part 3</title>
