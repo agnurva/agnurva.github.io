@@ -136,17 +136,17 @@
 <li>Region</li>
 </ol>
 
-<p>Traditionally, these data are used to create reports and are published by governments and other organizations periodically. In its raw form(a table with lot of numbers :-/), they are usually the most boring set of reports one can imagine. Over the last 20 years these reports have become a little more interesting because of the use of business intelligence and reporting tools. Some of the very well known tools are Business Objects, Microsoft SQL Server Reporting Services, Cognos, Pentaho BI etc., In more recent times there are few more additions to this set of tools with better quality charts and customizing features- Tableau and Qlikview.</p>
+<p>Traditionally, these data are used to create reports and are published by governments and other organizations periodically. In its raw form(a table with lot of numbers :-/), they are usually the most boring set of reports one can imagine. Over the last 20 years these reports have become a little more interesting because of the use of business intelligence and reporting tools. Some of the very well known tools are Business Objects, Microsoft SQL Server Reporting Services, Cognos, Pentaho BI etc. In more recent times there are few more additions to this set of tools with better quality charts and customizing features- Tableau and Qlikview. These tools provide a good GUI to enable self service BI capabilities with chart suggestion and other such nice features.</p>
 
 <p>Typically, these tools provide an interface to fit the data into some pre-defined chart. These charts are supplemented with customizable options to add dimensions, sort, filter and perform aggregations. Some of these charts are good to compare Part-to-Whole while others are better when comparing equals. Given below are few examples of such charts taken from D3.js gallery:</p>
 
 <p><img src="/example_charts.png" alt="" /></p>
 
-<p>A report or a dashboard usually consists of a group of these charts that are centered around a commmon theme. The number of charts to be used, their layout and the customizable options to provide along with the charts depends on various factors. There are many different ways to use these pre-defined charts to convey inforamtion, but the main challenge here is to fit the data between the group of charts and provide functions to filter and aggregate to gather information. These charts are good mechanisms to communicate fine detailed information and at times redundant. I will cover more on these canned reports and dashboards in another blog post. For now the focus is on visualization and how it differs from these fixed representations.</p>
+<p>A report or a dashboard usually consists of a group of these charts that are centered around a commmon theme. The number of charts to be used, their layout and the customizable options to provide along with the charts depends on various factors. There are many different ways to use these pre-defined charts to convey inforamtion, but the main challenge here is to fit the data between the group of charts and provide functions to filter and aggregate to gather information. These charts are good mechanisms to communicate fine detailed information and at times redundant. I will cover more on these canned reports and dashboards in another blog post. Some of the self service BI tools like Power BI and Tableau are good for visualization and exploratory data analysis and can be learnt quickly.</p>
 
-<p>Visualization in my opinion is more of a process and is holistic in nature. It always focuses on the entire data in one visual representation and usually provides summarised insights. It is the first step towards understanding data and the information it contains. In visualization we start with a blank canvas and add layers one by one to project the entire data in a form that can be easily understood and interpreted. We  do not force fit the data into a pre-defined chart, this is because we do not yet know the structure of the data and hence we do not know how it need to be communicated visually. An exploratory process is carried out by adding contextual constraints(say time) to basic visual glyphs such as points, lines, regions etc. Once they are encoded in this fashion they are likely to show hidden patterns which are then tailored into the visualization as additional layers. This process is repeated until we have the  complete story recreated using a visual representation. This process requires a lot of skill and is easier said than done. So, let us break down Sarah Bird&rsquo;s code and try to understand this process.</p>
+<p>Visualization in my opinion is more of a process and is holistic in nature. It always focuses on the entire data in one visual representation and usually provides summarised insights. It is the first step towards understanding data and the information it contains. In visualization we start with a blank canvas and add layers one by one(just like a painting) to project the entire data in a form that can be easily understood and interpreted. We  do not force fit the data into a pre-defined chart, this is because we do not yet know the structure of the data and hence we do not know how it need to be communicated visually. An exploratory process is carried out by adding contextual constraints(say time) to basic visual glyphs such as points, lines, regions etc. Once they are encoded in this fashion they are likely to show hidden patterns which are then tailored into the visualization as additional layers. This process is repeated until we have the  complete story recreated using a visual representation. This process requires a lot of skill and is easier said than done. So, we will go through a practical example of this process.</p>
 
-<p>But before we proceed, we need to choose the right tools to go about this task. I initially thought of using D3js but found the learning curve to be too steep and requiring knowledge of javascript, html, css and svg. Since I am a data engineer and work mostly with SQL and python I was on the lookout for some tool that uses these programming paradigms. That is, when I came across Bokeh, a visualization library that can be used to create visualizations like D3js but using Python. I have used Python Pandas and Bokeh along with Jupyter notebook to recreate this visualization. Please feel free to code along :-)</p>
+<p>But before we proceed, a quick background. I initially thought of using D3js but found the learning curve to be too steep and requiring knowledge of javascript, html, css and svg. Since I am a data engineer and work mostly with SQL and python I was on the lookout for some tool that uses these programming paradigms. That is, when I came across Bokeh(presentation by Sarah Bird @ PyData 2016) a visualization library that can be used to create visualizations like D3js but using Python. I have used Python Pandas and Bokeh along with Jupyter notebook to recreate Bird&rsquo;s visualization. Please feel free to code along :-)</p>
 
 <p>Step 1: Import data</p>
 
@@ -198,8 +198,7 @@ show(p)
 
 <p><img src="/base_layout1.png" alt="" /></p>
 
-<p>Step 7: Explore the base visualizations and configure
-From the chart it can be seen that there is skewness in the data. The large income groups are responsible for cluttering the data of the smaller and middle income groups. This is because the difference in value between points in the large income group are much larger than the difference between points in the lower and mid income groups. Hence changing the x axis scale to logarithmic scale will stretch the data and provide a much better view of the data. Re-initialize the canvas with x_axis type and x-axis formatter</p>
+<p>Step 7: Explore the base visualizations and configure. From the chart it can be seen that there is skewness in the data. The large income groups are responsible for cluttering the data of the smaller and middle income groups. This is because the difference in value between points in the large income group are much larger than the difference between points in the lower and mid income groups. Hence changing the x axis scale to logarithmic scale will stretch the data and provide a much better view of the data. Re-initialize the canvas with x_axis type and x-axis formatter</p>
 
 <pre><code class="language-python">from bokeh.io import show
 from bokeh.plotting import figure
@@ -450,7 +449,64 @@ while True:
   <div class="inner">
     <div class="read-next-feed">      
       
+<article class="read-next-card" 
+            style="background-image: url(https://datasingularity.org/HomeCover.jpeg);" >
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; Digital Codex &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://datasingularity.orgtags/data/">#Data</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
 
+    <div class="read-next-card-content">
+      
+        <ul>
+                      
+        
+          <li><a href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">An Introduction to Data Visualization-Part 1</a></li>            
+        
+          <li><a href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/">An Introduction to Data Visualization-Part 2</a></li>            
+        
+          <li><a href="https://datasingularity.org/post/data-modelling-process-part-1/">Data Modelling Process - Part 1</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://datasingularity.orgtags/data/">See all related posts →</a>
+    </footer>
+</article>
+
+
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://datasingularity.org/post/data-modelling-process-part-1/">
+      <div class="post-card-image" style="background-image: url(https://datasingularity.org/Intro_to_viz3.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://datasingularity.org/post/data-modelling-process-part-1/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #Data  </span>
+              
+              <h2 class="post-card-title">Data Modelling Process - Part 1</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information Systems(IS) based on Relational DataBase Management System(RDBMS), Today I primilarily work on Visualiztion and Analytics solution based on Big Data technologies. I though of quickly brushing up on the traditional way of managing information. I was too lazy to find and read those old chunky books on databases and so I started with youtube and followed up with couple of links on Google looking out for definitions, laws and design guidelines used in Data Modelling. ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://datasingularity.org/img/ghost-icon.png" alt="Author" />
+          <span class="post-card-author"><a href="/">Clement Francis</a></span>
+      </footer>
+    </div>
+</article>
       
       
       <article class="post-card post"> 
@@ -470,7 +526,7 @@ while True:
           </header>
           <section class="post-card-excerpt">
               
-                <p>Hello folks, I hope you found part one of the introducution to visualization series interesting. In part one, the focus was on using visualization for analysing and understanding data. In this blog, we will re-emphasize on this aspect of data visualization.
+                <p>Hello folks, I hope you found part one of the introduction to visualization series interesting. In part one, the focus was on using visualization for analysing and understanding data. In this blog, we will re-emphasize on this aspect of data visualization.
 Let me take you back in time to the early 19th century which saw a large scale change in the societal structures around the world. Slavery was abolished, and the Second Industrial Revolution led to massive urbanization and significantly higher levels of productivity. ...  </p>
               
           </section>

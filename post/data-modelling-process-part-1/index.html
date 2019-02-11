@@ -4,39 +4,39 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>An Introduction to Data Visualization-Part 2 &middot; </title>
+    <title>Data Modelling Process - Part 1 &middot; </title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://datasingularity.org/favicon.ico" />
-    <link rel="canonical" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
+    <link rel="canonical" href="https://datasingularity.org/post/data-modelling-process-part-1/" />
 
-     <meta name="description" content="Hello folks, I hope you found part one of the introduction to visualization series interesting. In part one, the focus was on using visualization for analysing " /> 
+     <meta name="description" content="Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information " /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://datasingularity.org/Intro_to_viz2.jpg"/>
+    <meta name="twitter:image" content="https://datasingularity.org/Intro_to_viz3.jpg"/>
     
  
-    <meta name="twitter:title" content="An Introduction to Data Visualization-Part 2"/>
-    <meta name="twitter:description" content="Hello folks, I hope you found part one of the introduction to visualization series interesting. In part one, the focus was on using visualization for analysing "/>
-    <meta name="twitter:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
+    <meta name="twitter:title" content="Data Modelling Process - Part 1"/>
+    <meta name="twitter:description" content="Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information "/>
+    <meta name="twitter:url" content="https://datasingularity.org/post/data-modelling-process-part-1/" />
     <meta name="twitter:site" content="@agnurva"/>
 
     <meta property="og:site_name" content="" />
-    <meta property="og:title" content="An Introduction to Data Visualization-Part 2 &middot; Digital Codex" />
-    <meta property="og:url" content="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/" />
+    <meta property="og:title" content="Data Modelling Process - Part 1 &middot; Digital Codex" />
+    <meta property="og:url" content="https://datasingularity.org/post/data-modelling-process-part-1/" />
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="Hello folks, I hope you found part one of the introduction to visualization series interesting. In part one, the focus was on using visualization for analysing " />
+    <meta property="og:description" content="Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information " />
 
-    <meta property="article:published_time" content="2019-01-01T13:17:03&#43;05:30" />
+    <meta property="article:published_time" content="2019-01-23T14:42:27&#43;05:30" />
     <meta property="article:tag" content="Data" />
 
-    <meta property="og:image" content="https://datasingularity.org/Intro_to_viz2.jpg"/>
+    <meta property="og:image" content="https://datasingularity.org/Intro_to_viz3.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.50" />
@@ -108,46 +108,27 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2019-01-01">1 January 2019</time>
+            <time class="post-full-meta-date" datetime="2019-01-23">23 January 2019</time>
                 <span class="date-divider">/</span> <a href="https://datasingularity.orgtags/data/">#Data</a>&nbsp;
         </section>
-        <h1 class="post-full-title">An Introduction to Data Visualization-Part 2</h1>
+        <h1 class="post-full-title">Data Modelling Process - Part 1</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://datasingularity.org/Intro_to_viz2.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://datasingularity.org/Intro_to_viz3.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        
+        <p>Recently, I attended an interview for the role of a Data/Dimensional modeller for a services company in Bangalore. Though I have designed and build Information Systems(IS) based on Relational DataBase Management System(RDBMS), Today I primilarily work on Visualiztion and Analytics solution based on Big Data technologies. I though of quickly brushing up on the traditional way of managing information. I was too lazy to find and read those old chunky books on databases and so I started with youtube and followed up with couple of links on Google looking out for definitions, laws and design guidelines used in Data Modelling. I found very few sources covering the - what? Why? and How? of data modelling process as a whole. Some of the content were also misleading because of misintepretations and the use of ambigious examples. Hence, I will document the process I follow, hoping that it will help folks who want to get a practical overview of the data modelling process in a short time.</p>
 
-<p>Hello folks, I hope you found part one of the introduction to visualization series interesting. In part one, the focus was on using visualization for analysing and understanding data. In this blog, we will re-emphasize on this aspect of data visualization.</p>
-
-<p>Let me take you back in time to the early 19th century which saw a large scale change in the societal structures around the world. Slavery was abolished, and the Second Industrial Revolution led to massive urbanization and significantly higher levels of productivity. This also gave rise to a massive migration of people from all over the world to large cities for work. The living conditions of these working class people were not planned and they were frequently prone to diseases usually in waves of epidemics that took many lives.</p>
-
-<p>People believed that the origin of these epidemics was a noxious form of bad air, also known as &ldquo;night air&rdquo; and this theory was known as the Miasma theory. Diseases such as cholera, chlamydia, or the Black Death were though to have been caused by this foul air. However, John Snow had studied cholera outbreaks throughout his life and was skeptical about this theory. Through his observations, he believed that the disease spread through water and was out to prove the medical community wrong about the Miasma theory. Snow knew that the city water was supplied by two companies and decided to conduct a double blind study. His study provided evidence that the company that was supplying water from downstream Thames river caused the diseases since it was contaminated with the sanitary wastes from the city. His theory was not accepted and life went on until a severe outbreak of cholera occurred in 1854 near Broad Street. Snow was quick to reach the spot and collect data related to death and water source in the neighbourhood. He plotted this data on a map of the city and was successful in convincing the authorities about his theory which led them to removing the handle of the contaminated water pump. Given below is the original map created by Snow.
-<img src="/john_snow_orignial.png" alt="" />
-I have recreated the map visualization using Google maps and Bokeh visualization library. Please note that the layout of the map has changed over the years.
-<img src="/john_snow_recreation.png" alt="" /></p>
+<p>Before we begin, it is important for us to know the evolution of information systems to  understand the importanace of data modelling. But this is a big topic in itself and I will cover it in a seperate blog. For now, consider that there are primarily two types of Information Systems:</p>
 
 <ul>
-<li>The black dots on the map indicates the deaths due to cholera</li>
-<li>The red dot indicates the water source(water pump)</li>
-<li>The circle around each water source indicates the approximate range of each water source. Snow originally used Thiessen polygons by actually measuring the walking distance between the water source and the related death. Since I do not have the data, I have replaced it with a circle which could be a little misleading. The outliers are significantly different when viewed using Thiessen polygons.</li>
-<li>It can be noticed that some of the deaths seems to be outliers. There seems to be a non-contaminated water source nearby. But Snow manually visited these places and collected information and found that even these deaths were due to the Broad street pump from which they drank water on their way to school or work.</li>
+<li>OnLine Transactional Processing(OLTP) systems</li>
+<li>OnLine Analytical Processing(OLAP) Systems</li>
 </ul>
 
-<p>Snow&rsquo;s findings inspired fundamental changes in the water and waste management systems of London, which led to similar changes in other cities around the world. His contributions are also significant in formulating the &ldquo;Germ theory&rdquo; which is accepted today.</p>
-
-<p>Though John Snow did not live to see his work better the quality of lives of people around the world, his work will inspire us and he will forever be remembered for his contribution to humanity.</p>
-
-<h3 id="references">References</h3>
-
-<p><a href="https://en.wikipedia.org/wiki/John_Snow">About John Snow - Wikipedia</a></p>
-
-<p><a href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">Broad Street Choldera Outbreak - Wikipedia</a></p>
-
-<p><a href="https://github.com/agnurva/WorkingDirectory/blob/master/JohnSnow_Broadstreet_Outbreak.ipynb">Recreation of John Snow&rsquo;s Cholera Map - Jupyter Notebook</a></p>
+<p>I mostly follow the process laid out by Elmasri and Navathe in their book &ldquo;Fundamentals of Database Systems&rdquo;.</p>
     
         </div>
     </section>
@@ -187,13 +168,13 @@ I have recreated the map visualization using Google maps and Bokeh visualization
     <div class="read-next-card-content">
       
         <ul>
+                      
+        
           <li><a href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/">An Introduction to Data Visualization-Part 3</a></li>            
         
+          <li><a href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-2/">An Introduction to Data Visualization-Part 2</a></li>            
+        
           <li><a href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">An Introduction to Data Visualization-Part 1</a></li>            
-        
-          <li><a href="https://datasingularity.org/post/data-modelling-process-part-1/">Data Modelling Process - Part 1</a></li>            
-        
-                      
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -203,6 +184,7 @@ I have recreated the map visualization using Google maps and Bokeh visualization
 </article>
 
 
+      
       
       <article class="post-card post"> 
     
@@ -234,36 +216,6 @@ In the last two posts of this series, the emphasis was on the importance of usin
     </div>
 </article>
       
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">
-      <div class="post-card-image" style="background-image: url(https://datasingularity.org/Intro_to_viz1.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://datasingularity.org/post/an-introduction-to-data-visualization-part-1/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #Data  </span>
-              
-              <h2 class="post-card-title">An Introduction to Data Visualization-Part 1</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>Data visualization refers to the technique used to understand and communicate data or information by encoding it as visual objects (eg., points, lines, maps or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand data and share Information. ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://datasingularity.org/img/ghost-icon.png" alt="Author" />
-          <span class="post-card-author"><a href="/">Clement Francis</a></span>
-      </footer>
-    </div>
-</article>
-      
     </div>
   </div>
 </aside>
@@ -276,21 +228,21 @@ In the last two posts of this series, the emphasis was on the importance of usin
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">An Introduction to Data Visualization-Part 2</div>
+  <div class="floating-header-title">Data Modelling Process - Part 1</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
 
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=An%20Introduction%20to%20Data%20Visualization-Part%202&amp;url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Data%20Modelling%20Process%20-%20Part%201&amp;url=https%3a%2f%2fdatasingularity.org%2fpost%2fdata-modelling-process-part-1%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdatasingularity.org%2fpost%2fdata-modelling-process-part-1%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdatasingularity.org%2fpost%2fan-introduction-to-data-visualization-part-2%2f &title=An%20Introduction%20to%20Data%20Visualization-Part%202 &summary=Hello%20folks%2c%20I%20hope%20you%20found%20part%20one%20of%20the%20introduction%20to%20visualization%20series%20interesting.%20In%20part%20one%2c%20the%20focus%20was%20on%20using%20visualization%20for%20analysing%20and%20understanding%20data.%20In%20this%20blog%2c%20we%20will%20re-emphasize%20on%20this%20aspect%20of%20data%20visualization.%0aLet%20me%20take%20you%20back%20in%20time%20to%20the%20early%2019th%20century%20which%20saw%20a%20large%20scale%20change%20in%20the%20societal%20structures%20around%20the%20world.%20Slavery%20was%20abolished%2c%20and%20the%20Second%20Industrial%20Revolution%20led%20to%20massive%20urbanization%20and%20significantly%20higher%20levels%20of%20productivity.&source=LinkedIn">LinkedIn Share</a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdatasingularity.org%2fpost%2fdata-modelling-process-part-1%2f &title=Data%20Modelling%20Process%20-%20Part%201 &summary=Recently%2c%20I%20attended%20an%20interview%20for%20the%20role%20of%20a%20Data%2fDimensional%20modeller%20for%20a%20services%20company%20in%20Bangalore.%20Though%20I%20have%20designed%20and%20build%20Information%20Systems%28IS%29%20based%20on%20Relational%20DataBase%20Management%20System%28RDBMS%29%2c%20Today%20I%20primilarily%20work%20on%20Visualiztion%20and%20Analytics%20solution%20based%20on%20Big%20Data%20technologies.%20I%20though%20of%20quickly%20brushing%20up%20on%20the%20traditional%20way%20of%20managing%20information.%20I%20was%20too%20lazy%20to%20find%20and%20read%20those%20old%20chunky%20books%20on%20databases%20and%20so%20I%20started%20with%20youtube%20and%20followed%20up%20with%20couple%20of%20links%20on%20Google%20looking%20out%20for%20definitions%2c%20laws%20and%20design%20guidelines%20used%20in%20Data%20Modelling.&source=LinkedIn">LinkedIn Share</a>
   </div>
 
   <progress class="progress" value="0">

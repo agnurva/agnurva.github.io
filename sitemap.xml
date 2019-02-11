@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://datasingularity.org/post/data-modelling-process-part-1/</loc>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://datasingularity.org/post/an-introduction-to-data-visualization-part-3/</loc>
     <lastmod>2019-01-01T13:19:26+05:30</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://datasingularity.org/</loc>
-    <lastmod>2019-01-01T13:19:26+05:30</lastmod>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://datasingularity.org/tags/data/</loc>
-    <lastmod>2019-01-01T13:19:26+05:30</lastmod>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,14 +51,26 @@
   </url>
   
   <url>
+    <loc>https://datasingularity.org/categories/data-modelling/</loc>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://datasingularity.org/categories/normalization/</loc>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://datasingularity.org/post/</loc>
-    <lastmod>2019-01-01T13:19:26+05:30</lastmod>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://datasingularity.org/tags/</loc>
-    <lastmod>2019-01-01T13:19:26+05:30</lastmod>
+    <lastmod>2019-01-23T14:42:27+05:30</lastmod>
     <priority>0</priority>
   </url>
   
